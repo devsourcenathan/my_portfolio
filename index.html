@@ -243,21 +243,23 @@
             <div class="portfolios">
                 <div class="portfolio-item">
                     <div class="image">
-                        <img src="./assets/img/port1.jpg" alt="">
+                        <img src="./assets/img/promptopia.png" alt="">
                     </div>
                     <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <p style="padding: 8px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque,
-                            voluptatum?</p>
+                        <h3>Promptopia</h3>
+                        <p style="padding: 12px; text-align: left;">
+                            Projet réalisé lors de mon aprentissage de NextJS, il permet de partager des prompt IA.
+                            <br>
+                            <span style="text-align: center;">
+                                NextJS - MongoDB Atlas - Tailwind
+                            </span>
+                        </p>
                         <div class="icons">
                             <a href="#" class="icon">
                                 <i class="fab fa-github"></i>
                             </a>
                             <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
+                                <i class="fab fa-browser"></i>
                             </a>
                         </div>
                     </div>
@@ -559,6 +561,24 @@
         <i class="fas fa-adjust"></i>
     </div>
     <script src="./assets/scripts/app.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script>
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Port: 2525,
+            Username: "tngislain@gmail.com",
+            Password: "217EE43F0FBB5E76B982C9212182324CC56C",
+            To: 'sadenachbinathan@gmail.com',
+            From: "tngislain@gmail.com",
+            Subject: "This is the subject",
+            Body: "And this is the body"
+        }).then(
+            // message => alert(message)
+        );
+    </script>
 </body>
 
 </html>
